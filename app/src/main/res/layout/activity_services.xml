@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:text="Help Desk"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="If You Stuck Somewhere, Click below buttons to directly call on following emergency services now."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Security. Privacy. Protection"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="30dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonpolice"
+        android:layout_width="100dp"
+        android:scaleType="fitXY"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/police1"
+
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:fontFamily="serif"
+            android:text="Police Stations"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical">
+
+
+        <ImageButton
+        android:id="@+id/imageButtonfirestation"
+        android:layout_width="100dp"
+        android:scaleType="fitXY"
+        android:layout_height="100dp"
+
+        app:srcCompat="@drawable/hosp5"
+        />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:fontFamily="serif"
+                android:text="Hospitals"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/imageButtonfire"
+        android:layout_width="100dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:layout_height="100dp"
+        android:onClick="onFireImageClick"
+        app:srcCompat="@drawable/fire_station"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:fontFamily="serif"
+        android:text="Fire Stations"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/womenbtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+
+            app:srcCompat="@drawable/safetywomen"
+            />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:fontFamily="serif"
+            android:text="Woman Safety"
+            android:layout_gravity="center"/>
+
+        </LinearLayout>
+      </LinearLayout>
+
+</LinearLayout>
